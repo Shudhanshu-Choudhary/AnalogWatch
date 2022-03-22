@@ -1,29 +1,16 @@
-import  {useState, useEffect} from 'react';
+import useRotate from "../hooks/useRotate";
 
 const SecondHand = () => {
+     
+    const [value] = useRotate( 5, 1000);
 
-    let [value, setValue] = useState(0);
-
-    useEffect(() => {
-        setInterval(() => {
-            setValue( value => value + 5);
-           // rotateClock(value); 
-        }, 1000);
-    },[]);
-    
-    const rotateClock = (value) => {
-        console.log(value);
-        return {
-            transform: `rotate(${value}deg)`
-        }
+    const transformStyle = {
+        transform: `rotate(${value}deg)`
     }
-
-    if(value === 360) {
-        setValue(0);
-    }
+   
 
     return ( 
-        <div className="hand second_hand" style={rotateClock(value)}>
+        <div className="hand second_hand" style={transformStyle}>
             SecondHand
         </div>
      );
