@@ -1,0 +1,61 @@
+.container {
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 50px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: #FFFFFFFF;
+    position: relative;
+}
+
+.hand {
+    background: #FFFFFFFF;
+    font-size: 10px;
+}
+
+.hour_hand {
+    background: black;
+    width: 150px;
+    height: 10px;
+    position: absolute;
+    top: 295px;
+    left: 305px;
+}
+
+.second_hand {
+    background: black;
+    width: 200px;
+    height: 10px;
+    position: absolute;
+    top: 295px;
+    left: 305px;
+    transform-origin: left ;
+}
+
+.minute_hand {
+    background: black;
+    width: 180px;
+    height: 10px;
+    position: absolute;
+    top: 295px;
+    left: 305px;
+    transform-origin: left ;
+    
+}
+
+.black_circle {
+    margin: 0;
+    display: flex;
+    font-size: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    top: 283px;
+    left: 290px;
+    
+}
+
