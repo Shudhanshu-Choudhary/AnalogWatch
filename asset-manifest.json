@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/AnalogWatch/static/css/main.23a92237.css",
-    "main.js": "/AnalogWatch/static/js/main.77bccbf0.js",
+    "main.js": "/AnalogWatch/static/js/main.c7ff1eac.js",
     "static/js/787.c04b51b3.chunk.js": "/AnalogWatch/static/js/787.c04b51b3.chunk.js",
     "static/media/pngwing.com.png": "/AnalogWatch/static/media/pngwing.com.432a6d02f4f50acf34fc.png",
     "index.html": "/AnalogWatch/index.html",
     "main.23a92237.css.map": "/AnalogWatch/static/css/main.23a92237.css.map",
-    "main.77bccbf0.js.map": "/AnalogWatch/static/js/main.77bccbf0.js.map",
+    "main.c7ff1eac.js.map": "/AnalogWatch/static/js/main.c7ff1eac.js.map",
     "787.c04b51b3.chunk.js.map": "/AnalogWatch/static/js/787.c04b51b3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23a92237.css",
-    "static/js/main.77bccbf0.js"
+    "static/js/main.c7ff1eac.js"
   ]
 }
