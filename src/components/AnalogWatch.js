@@ -6,12 +6,14 @@ import SecondHand from "./SecondHand";
 import Hourhand from "./HourHand";
 
 const AnalogWatch = () => {
+    const d = new Date();
+
     return ( 
         <div className="container">
             <img className="watch" src={watch} alt="Clock-body"/>
             <MinuteHand />
             <SecondHand />
-            <Hourhand />
+            <Hourhand time = {d}/>
             <div className="black_circle">
                 o
             </div>

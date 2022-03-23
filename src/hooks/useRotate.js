@@ -1,26 +1,35 @@
-import {useState, useEffect} from 'react' 
+import {useState, useEffect} from 'react' ;
 
-function useRotate(rValue, tValue) {
-    var [value, setValue] = useState(0);
 
-    useEffect(() => {
-        setInterval(() => {
-            setValue( value => value + rValue);
-        }, tValue);
-    },[]);
-    
-    if(value === 360) {
-        setValue(0);
+function useRotate() {
+
+    var [time, setTime] = useState({});
+
+    var getTime = () => {
+        const D = new Date();
+        console.log("getTime");
+
+        var H = (D.getHours() * 15) - 90 ;
+        var M =  (D.getMinutes() * 6) - 90;
+        var S = (D.getSeconds() * 6 ) - 90;
+
+        setTime({H, M, S});
+       
+        return time;
     }
 
-    return [value];
-    // const rotateClock = (value) => {
-    //     console.log(value);
-    //     return {
-    //         transform: `rotate(${value}deg)`
-    //     }
-    // }
+    useEffect(() => {
+        console.log("useEffect");
+
+        setInterval(() => {
+            getTime();
+        }, 1000);
+    },[]);
     
+    console.log("actual return");
+
+    return time;
+
 }
 
 

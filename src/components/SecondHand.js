@@ -2,10 +2,10 @@ import useRotate from "../hooks/useRotate";
 
 const SecondHand = () => {
      
-    const [value] = useRotate( 5, 1000);
+    const time = useRotate();
 
     const transformStyle = {
-        transform: `rotate(${value}deg)`
+        transform: `rotate(${time.S}deg)`
     }
    
 

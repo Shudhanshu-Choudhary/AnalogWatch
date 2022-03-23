@@ -20,6 +20,7 @@
     width: 150px;
     height: 10px;
     position: absolute;
+    transform-origin: left ;
     top: 295px;
     left: 305px;
 }

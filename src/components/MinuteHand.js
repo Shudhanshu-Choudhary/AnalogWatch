@@ -2,10 +2,12 @@ import useRotate from "../hooks/useRotate";
 
 const MinuteHand = () => {
 
-    const [value] = useRotate( 5, 60000);
+    const time = useRotate();
+
+    console.log(time);
 
     const transformStyle = {
-        transform: `rotate(${value}deg)`
+        transform: `rotate(${time.M}deg)`
     }
     
 

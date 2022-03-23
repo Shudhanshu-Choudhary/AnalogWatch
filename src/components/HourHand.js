@@ -1,12 +1,15 @@
+import { useState } from "react";
 import useRotate from "../hooks/useRotate";
 
 
 const Hourhand = () => {
 
-     const [value] = useRotate( 25, 3600000);
+     const time = useRotate();
+
+
 
     const transformStyle = {
-        transform: `rotate(${value}deg)`
+        transform: `rotate(${time.H}deg)`
     }
 
     return ( 
