@@ -9,9 +9,9 @@ function useRotate() {
         const D = new Date();
         console.log("getTime");
 
-        var H = (D.getHours() * 15) - 90 ;
+        var H =  (D.getHours() * 15) - 60;
         var M =  (D.getMinutes() * 6) - 90;
-        var S = (D.getSeconds() * 6 ) - 90;
+        var S =  (D.getSeconds() * 6 ) - 90;
 
         setTime({H, M, S});
        

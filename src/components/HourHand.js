@@ -6,8 +6,6 @@ const Hourhand = () => {
 
      const time = useRotate();
 
-
-
     const transformStyle = {
         transform: `rotate(${time.H}deg)`
     }
